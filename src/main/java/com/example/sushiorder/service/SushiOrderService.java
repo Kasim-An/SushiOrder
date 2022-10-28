@@ -5,7 +5,7 @@ import com.example.sushiorder.entity.Status;
 import com.example.sushiorder.entity.Sushi;
 import com.example.sushiorder.entity.Sushi_order;
 import com.example.sushiorder.repository.StatusRepository;
-import com.example.sushiorder.repository.SushiOrderRepository;
+import com.example.sushiorder.repository.Sushi_orderRepository;
 import com.example.sushiorder.repository.SushiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 public class SushiOrderService {
 
     @Autowired
-    private SushiOrderRepository sushiOrderRepository;
+    private Sushi_orderRepository sushiOrderRepository;
     @Autowired
     private SushiRepository sushiRepository;
     @Autowired

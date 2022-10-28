@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SushiOrderRepository extends JpaRepository<Sushi_order,Long> {
+public interface Sushi_orderRepository extends JpaRepository<Sushi_order,Long> {
     @Query(value="select * from sushi_order s where s.id=:id", nativeQuery = true)
     public Sushi_order findById(long id);
 }
